@@ -1,7 +1,7 @@
 import wikipediaapi
 import chromadb
 
-wiki = wikipediaapi.Wikipedia("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",'en')
+wiki = wikipediaapi.Wikipedia(os.getenv("YOUR_USER_AGENT"),'en')
 
 chroma_client = chromadb.Client()
 collection = chroma_client.get_or_create_collection(name="wiki_knowledge")
