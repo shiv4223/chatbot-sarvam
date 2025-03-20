@@ -6,7 +6,7 @@ import numpy as np
 from datetime import datetime
 from flask import jsonify
 
-# from wikipedia_data_extraction import collection
+from wikipedia_data_extraction import collection
 
 from llm_inferences import (
     query_meta_llama_vision_openrouter,
@@ -93,15 +93,15 @@ def get_context_mode(mode):
 
 def best_quality(prompt, model_name):
     message, prompt = prompt[0],prompt[1]
-    # retrieved_results = collection.query(
-    #     query_texts=[message],
-    #     n_results=1
-    # )
+    retrieved_results = collection.query(
+        query_texts=[message],
+        n_results=1
+    )
 
-    # documents = retrieved_results["documents"][0]
-    # doc_text = ""
-    # for doc in documents:
-    #     doc_text += doc
+    documents = retrieved_results["documents"][0]
+    doc_text = ""
+    for doc in documents:
+        doc_text += doc
 
     # print(doc_text)
     doc_text = ""
