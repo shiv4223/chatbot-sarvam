@@ -79,7 +79,6 @@ After Railway imports your project:
 1. Go to Project Settings → Environment Variables.
 2. Add these environment variables:
 3. Variable	Description
-   - HUGGINGFACE_API_KEY: HuggingFace API Key
    - SUPABASE_URL: Supabase Project URL
    - SUPABASE_KEY: Supabase API Key
    - REDIS_URL: Redis Connection URL
