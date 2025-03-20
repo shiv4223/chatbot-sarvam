@@ -87,6 +87,7 @@ After Railway imports your project:
    - GROQ_API_KEY: GROQ API Key 
    - CLOUDFLARE_ACCOUNT_ID: CloudFlare Account ID 
    - CLOUDFLARE_AUTH_TOKEN: CloudFlare API Key
+   - YOUR_USER_AGENT: Search "My User Agent on Google"
    - FLASK_ENV: production
    - PORT:	5000
 
