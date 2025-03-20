@@ -14,4 +14,4 @@ RUN python3 -m venv /opt/venv && \
 
 EXPOSE 5000
 
-CMD ["/opt/venv/bin/python", "app.py"]
+CMD ["gunicorn", "-b", "0.0.0.0:5000", "--workers=1", "--threads=2", "app:app"]
