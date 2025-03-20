@@ -64,11 +64,6 @@ Chatbot with multiple models, multiple-modes, multi-modal, context management, R
 
 
 ## Deployment Instructions: 
-
-
-
-### References: 
-1. Caching: https://arxiv.org/abs/2406.00025
-2. 
+1. 
 
 
